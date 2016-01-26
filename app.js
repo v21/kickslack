@@ -9,7 +9,7 @@ var Slack           = require('node-slack');
 var slack           = new Slack(process.env.SLACK_WEBHOOK_URL);
 var track           = [];
 var track_max       = 2;
-var track_interval  = 15 * 60000;
+var track_interval  = 3 * 60000;
 var kickstarter_url = process.env.KICKSTARTER_URL;
 
 function to_spaces (body) {
